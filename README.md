@@ -1,2 +1,2 @@
 # cyclone-messaging
-A new message app powered by react
+A very easy to use message app online.
