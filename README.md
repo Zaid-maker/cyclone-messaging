@@ -8,4 +8,4 @@ UI/UX design & Logo by `skies`
 
 ## Folder structures
 `./client/` contains the frontend code.
-`./server/` contains the backend code.
+`./server/` contains the backend code. Which connect the frontend to backend.
