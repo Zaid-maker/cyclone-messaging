@@ -17,5 +17,5 @@ UI/UX design & Logo by `skies`
 
 ## About
 
-The front-end is hosted on [Netlify](https://www.netlify.com)
+The front-end is hosted on [Netlify](https://www.netlify.com) <br />
 The back-end is hosted on [Heroku](https://www.heroku.com)
