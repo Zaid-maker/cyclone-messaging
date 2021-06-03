@@ -1,6 +1,7 @@
 <div align="center">
 
 # Cyclone Messaging
+<img width='130px' src="./logo.jpg" alt="Logo">
 
 </div>
 
