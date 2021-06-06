@@ -11,16 +11,9 @@ export function SocketProvider({ id, children }) {
   const [socket, setSocket] = useState()
 
   useEffect(() => {
-    const newSocket = io('https://cyclone-messaging.netlify.app', { query: { id } }, {
-        withCredentials: true,
-        transportOptions: {
-          polling: {
-            extraHeaders: {
-              "my-custom-header": "abcd"
-            }
-          }
-        }
-      }
+    const newSocket = io(
+      'http://localhost:5000',
+      { query: { id } }
     )
     setSocket(newSocket)
 
