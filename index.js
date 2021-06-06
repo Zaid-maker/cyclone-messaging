@@ -30,6 +30,6 @@ io.on('connection', socket => {
   })
 })
 
-httpServer.listen(5000, () => {
+httpServer.listen(7000, () => {
   console.log(`I am listening on port: 7000`);
 });
