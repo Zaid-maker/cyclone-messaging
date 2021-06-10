@@ -12,7 +12,7 @@ export function SocketProvider({ id, children }) {
 
   useEffect(() => {
     const newSocket = io(
-      'http://localhost:5000',
+      'https://cyclone-messaging-server.herokuapp.com',
       { query: { id } }
     )
     setSocket(newSocket)
