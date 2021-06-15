@@ -1,16 +1,19 @@
-const app = require('express');
-const httpServer = require('http').createServer(app);
-const io = require("socket.io")(httpServer, {
+//DOTENV
+require('dotenv').config();
+
+const PORT = process.env.PORT || 6000;
+
+app.use(cors());
+
+const app = express();
+const cors = require('cors');
+const express = require('express');
+const http = require('http')
+const server = http.createServer(app);
+const io = require("socket.io")(server, {
   cors: {
     origin: 'https://cyclone-messaging.netlify.app',
-    handlePreflightRequest: (req, res) => {
-      res.writeHead(200, {
-        "Access-Control-Allow-Origin": "https://cyclone-messaging.netlify.app",
-        "Access-Control-Allow-Methods": "GET,POST",
-        "Access-Control-Allow-Headers": "my-custom-header",
-        "Access-Control-Allow-Credentials": true
-      })
-    }
+    methods: ['GET', 'POST']
   }
 });
 
@@ -30,6 +33,6 @@ io.on('connection', socket => {
   })
 })
 
-httpServer.listen(7000, () => {
-  console.log(`I am listening on port: 7000`);
+server.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
