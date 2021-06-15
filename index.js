@@ -3,14 +3,14 @@ const httpServer = require('http').createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
     origin: 'https://cyclone-messaging.netlify.app',
-    //handlePreflightRequest: (req, res) => {
-      //res.writeHead(200, {
-      //  "Access-Control-Allow-Origin": "https://cyclone-messaging.netlify.app",
-      //  "Access-Control-Allow-Methods": "GET,POST",
-      //  "Access-Control-Allow-Headers": "my-custom-header",
-      //  "Access-Control-Allow-Credentials": true
-      //})
-    //}
+    handlePreflightRequest: (req, res) => {
+      res.writeHead(200, {
+        "Access-Control-Allow-Origin": "https://cyclone-messaging.netlify.app",
+        "Access-Control-Allow-Methods": "GET,POST",
+        "Access-Control-Allow-Headers": "my-custom-header",
+        "Access-Control-Allow-Credentials": true
+      })
+    }
   }
 });
 
