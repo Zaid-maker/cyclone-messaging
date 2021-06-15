@@ -2,7 +2,7 @@ const app = require('express');
 const httpServer = require('http').createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: '*',
+    origin: 'https://cyclone-messaging.netlify.app',
     //handlePreflightRequest: (req, res) => {
       //res.writeHead(200, {
       //  "Access-Control-Allow-Origin": "https://cyclone-messaging.netlify.app",
