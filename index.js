@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: 'https://cyclone-messaging.netlify.app',
+    origin: 'http://messaging.cyclonebotlist.xyz',
     methods: ['GET', 'POST']
   }
 });
