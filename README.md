@@ -14,8 +14,6 @@ A very easy to use message web app online.
 
 The app built with react framework for faster and better performance.
 
-UI/UX design & Logo by `skies`
-
 ## Live Demo
 
 [Click here to see Cyclone Messaging](https://cyclone-messaging.netlify.app)
