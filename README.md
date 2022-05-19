@@ -5,6 +5,13 @@
 
 </div>
 
+<p> 
+  <img alt="Issues" src="https://img.shields.io/github/issues/Zaid-maker/cyclone-messaging?color=red" />
+  <img alt="Forks" src="https://img.shields.io/github/forks/Zaid-maker/cyclone-messaging" />
+   <img alt="Stars" src="https://img.shields.io/github/stars/Zaid-maker/cyclone-messaging" />  
+</p>
+
+
 ## Introduction
 
 A very easy to use message web app online.
