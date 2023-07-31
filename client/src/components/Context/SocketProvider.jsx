@@ -10,7 +10,7 @@ export function useSocket() {
 export function SocketProvider({ id, children }) {
   const [socket, setSocket] = useState();
   // const ENDPOINT = "http://localhost:5000";
-  const ENDPOINT = 'https://cyclone-messaging-server.herokuapp.com';
+  const ENDPOINT = 'https://cyclone-messaging.zaidmaker.repl.co';
 
   useEffect(() => {
     const newSocket = io(ENDPOINT, { query: { id } });
