@@ -11,7 +11,7 @@
   "author": "DevMirza",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^3.1.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
